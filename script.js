@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
         contentContainer.innerHTML = '<button onclick="descargarApp()">Descargar App</button>';
     } else {
         // Si es un escritorio, muestra un código QR
-        contentContainer.innerHTML = 'qrsx.png';
+        contentContainer.innerHTML = '<img src="qrsx.png" alt="Código QR para descargar la app">';
     }
 });
 
