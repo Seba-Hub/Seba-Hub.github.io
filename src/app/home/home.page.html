@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      duoc aplicacion
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-card *ngIf="isMobile" class="ion-padding">
+    <ion-card-header>
+      Estás en un dispositivo móvil.
+    </ion-card-header>
+    <ion-card-content>
+      <img src="assets/icon/frame.png" alt="Imagen">
+      Contenido específico para dispositivos móviles.
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card *ngIf="!isMobile" class="ion-padding">
+    <ion-card-header>
+      Estás en una computadora.
+    </ion-card-header>
+    <ion-card-content>
+      Contenido específico para computadoras.
+      <ion-button (click)="descargarApk()" expand="full">Descargar APK</ion-button>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

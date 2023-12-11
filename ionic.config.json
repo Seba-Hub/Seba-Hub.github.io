@@ -1,0 +1,7 @@
+{
+  "name": "WebDescargaApp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
