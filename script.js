@@ -20,6 +20,6 @@ function descargarApp() {
         window.location.href = 'https://apps.apple.com/tu-enlace-de-la-app';
     } else {
         // Redirigir a la descarga de la APK para dispositivos Android
-        window.location.href = 'https://Kitsune12333.github.io/app-release.apk';
+        window.location.href = 'https://play.google.com/store/apps/eventdetails/4828520667149254021?hl=es';
     }
 }
