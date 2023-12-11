@@ -13,7 +13,13 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 function descargarApp() {
-    // Lógica para descargar la aplicación desde un dispositivo móvil
-    alert("Descargando la aplicación...");
-    // Puedes redirigir al usuario a la tienda de aplicaciones correspondiente o proporcionar un enlace de descarga directa.
+    var isiOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+
+    if (isiOS) {
+        // Redirigir a la App Store de iOS
+        window.location.href = 'https://apps.apple.com/tu-enlace-de-la-app';
+    } else {
+        // Redirigir a la descarga de la APK para dispositivos Android
+        window.location.href = 'https://Kitsune12333.github.io/app-release.apk';
+    }
 }
